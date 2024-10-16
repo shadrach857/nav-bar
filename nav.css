@@ -1,0 +1,96 @@
+:root{
+    color: rgb(6, 7, 7);
+    text-decoration-color: white;
+    accent-color: blue;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 12px;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav{
+    height: 90px;
+
+    justify-content: flex-start;
+    color: aliceblue;
+  
+ 
+}
+p{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+     font-size: 40px;
+}
+.links-container{
+
+background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 1000px;
+    align-items: center;
+    flex-direction: row;
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+nav a{
+
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    height: 100px;
+    color: var(text-decoration-color);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: burlywood;
+    width: 200px;
+
+}
+nav.home-link{
+    margin-right: auto;
+
+}
+nav svg{
+    fill: var(text-decoration-color);
+
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button{
+    display: block;
+    padding: 0 20px;
+}
+@media(max-width:450px){
+    .links-container{
+        align-items: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: o;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        background-color: var(color-1);
+        
+
+    }
+}
+nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100px;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    color: aliceblue;
+    
+}
